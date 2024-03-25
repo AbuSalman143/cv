@@ -1,13 +1,123 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    margin: 0;
+    padding: 0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.container{
+    background-color: rgb(175, 210, 240);
+}
+.header{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80px;
+    padding: 5px 10px;
+    position: fixed;
+    left: 0;
+    right: 0;
+}
+
+.header h1{
+    color: white;
+    margin: 0px;
+
+}
+.header nav{
+   
+    width: 50%;
+}
+.header nav ul{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0px;
+    width: 100%;
+    font-size:22px ;
+    list-style: none;
+    
+}
+
+.header nav ul a{
+    text-decoration: none;
+    font-weight:600 ;
+    color: brown;
+}
+
+
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+    padding: 25px 0px;
+    height: 600px;
+
+}
+.about h1{
+    font-size: 48px;
+}
+
+.about img{
+    
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+
+
+
+.about-text p{
+    text-align: justify;
+    padding: 5px 10px;
+
+}
+
+.section{
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sections h1{
+    text-align: center;
+}
+.sections p{
+    text-align: justify;
+    padding: 10px 10px;
+}
+
+.footer{
+    
+   
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer h1{
+    color: white;
+    text-align: center;
+    padding: 15px 0px;
+}
+
+.footer h1 i{
+    color: red;
+}
+
+.footer ul{
+    display: flex;
+    color:brown ;
+    justify-content: space-around;
+    padding: 15px 0px;
+    width: 50%;
+    align-items: center;
+    list-style: none;
+    font-size: 22px;
+    font-weight: 600;
 }
